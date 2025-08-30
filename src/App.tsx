@@ -30,8 +30,9 @@ function App() {
       <header className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-md py-2' : 'bg-transparent py-4'}`}>
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center">
-            <div className="h-12 w-12 rounded-full bg-green-800 flex items-center justify-center text-white font-bold text-lg mr-3">
-              ERS
+            <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center text-white font-bold text-lg mr-3">
+       
+              <img src="/enderase.png" alt="" />
             </div>
             <span className={`text-xl font-bold   ${isScrolled ? 'text-green-800' : 'text-white'}`}>Enderase Research</span>
           </div>
