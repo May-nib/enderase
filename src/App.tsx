@@ -1,4 +1,3 @@
-// App.tsx
 import { useState, useEffect } from 'react'
 import { ChevronUpIcon } from '@heroicons/react/24/solid'
 
@@ -31,7 +30,6 @@ function App() {
         <div className="container mx-auto px-4 md:px-6 flex justify-between items-center">
           <div className="flex items-center">
             <div className="h-12 w-12 rounded-full bg-white flex items-center justify-center text-white font-bold text-lg mr-3">
-       
               <img src="/enderase.png" alt="" />
             </div>
             <span className={`text-xl font-bold   ${isScrolled ? 'text-green-800' : 'text-white'}`}>Enderase Research</span>
@@ -42,6 +40,7 @@ function App() {
             <a href="#home" className={`text-blue-800 hover:text-blue-600 font-medium  ${isScrolled ? 'text-green-800' : 'text-white'}`}>Home</a>
             <a href="#about" className={`text-blue-800 hover:text-blue-600 font-medium  ${isScrolled ? 'text-green-800' : 'text-white'}`}>About</a>
             <a href="#services" className={`text-blue-800 hover:text-blue-600 font-medium  ${isScrolled ? 'text-green-800' : 'text-white'}`}>Services</a>
+            <a href="#it" className={`text-blue-800 hover:text-blue-600 font-medium  ${isScrolled ? 'text-green-800' : 'text-white'}`}>IT Solutions</a>
             <a href="#contact" className={`text-blue-800 hover:text-blue-600 font-medium  ${isScrolled ? 'text-green-800' : 'text-white'}`}>Contact</a>
           </nav>
 
@@ -63,6 +62,7 @@ function App() {
               <a href="#home" className="text-blue-800 font-medium py-2" onClick={() => setMobileMenuOpen(false)}>Home</a>
               <a href="#about" className="text-blue-800 font-medium py-2" onClick={() => setMobileMenuOpen(false)}>About</a>
               <a href="#services" className="text-blue-800 font-medium py-2" onClick={() => setMobileMenuOpen(false)}>Services</a>
+              <a href="#it" className="text-blue-800 font-medium py-2" onClick={() => setMobileMenuOpen(false)}>IT Solutions</a>
               <a href="#contact" className="text-blue-800 font-medium py-2" onClick={() => setMobileMenuOpen(false)}>Contact</a>
             </div>
           </div>
@@ -131,7 +131,7 @@ function App() {
           </div>
         </section>
 
-        {/* Services Section */}
+        {/* Services Section (expanded to include IT Solutions) */}
         <section id="services" className="py-20 bg-gray-50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center max-w-3xl mx-auto mb-16">
@@ -142,6 +142,7 @@ function App() {
               </p>
             </div>
 
+            {/* make room for 4 cards: 3 research services + 1 IT solutions */}
             <div className="grid md:grid-cols-3 gap-8">
               <div className="bg-white rounded-xl shadow-md overflow-hidden transition-transform hover:-translate-y-2">
                 <div className="h-2 bg-green-800"></div>
@@ -191,6 +192,53 @@ function App() {
           </div>
         </section>
 
+        {/* IT Solutions Section (separate full-width section) */}
+        <section id="it" className="py-24 bg-gradient-to-r from-white via-blue-50 to-green-50">
+          <div className="container mx-auto px-4 md:px-6">
+            <div className="max-w-4xl mx-auto text-center mb-12">
+              <div className="text-sm font-semibold text-green-800 uppercase">IT Solution Services</div>
+              <h2 className="text-3xl md:text-4xl font-bold text-green-900 mt-3">Gelagle — Technology-Driven Review Platform</h2>
+              <p className="text-gray-700 mt-4">
+                We provide a one-stop online ethics review platform that allows administrators, researchers, and reviewers to seamlessly manage the entire review cycle — including protocol submission, review, approval, and follow-up — in a high-quality, efficient, and technology-driven manner.
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8 items-start">
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-xl font-semibold text-green-800 mb-3">Streamlined Submissions</h3>
+                <p className="text-gray-700 mb-4">Easy protocol uploads, versioning, and intelligent validation to reduce back-and-forth and speed approvals.</p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Intelligent form validation & templates</li>
+                  <li>• Document versioning & auto-track changes</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-xl font-semibold text-green-800 mb-3">Reviewer Workflows</h3>
+                <p className="text-gray-700 mb-4">Assign, annotate, and approve with audit trails, role-based access control, and collaborative review tools.</p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Role-based access & secure audit trails</li>
+                  <li>• In-app annotations & decision history</li>
+                </ul>
+              </div>
+
+              <div className="bg-white rounded-2xl p-8 shadow-lg">
+                <h3 className="text-xl font-semibold text-green-800 mb-3">Transparent Tracking</h3>
+                <p className="text-gray-700 mb-4">Real-time status, automated notifications, task reminders, and follow-up management for faster, more transparent decisions.</p>
+                <ul className="text-gray-700 space-y-2">
+                  <li>• Real-time dashboards & KPIs</li>
+                  <li>• Automated email/SMS notifications</li>
+                </ul>
+              </div>
+            </div>
+
+            <div className="mt-10 text-center">
+              <a href="#contact" className="inline-block px-6 py-3 bg-green-800 text-white rounded-lg font-semibold hover:bg-green-700 transition">Request a Demo</a>
+              <a href="#" className="inline-block ml-3 px-6 py-3 border border-green-800 text-green-800 rounded-lg font-semibold hover:bg-green-50 transition">Learn about Gelagle (ገላግሌ)</a>
+            </div>
+          </div>
+        </section>
+
         {/* Contact Section */}
         <section id="contact" className="py-20 bg-white">
           <div className="container mx-auto px-4 md:px-6">
@@ -205,7 +253,7 @@ function App() {
             <div className="grid md:grid-cols-2 gap-12">
               <div>
                 <h3 className="text-2xl font-bold text-green-800 mb-6">Get In Touch</h3>
-                
+
                 <div className="space-y-6">
                   <div className="flex items-start">
                     <div className="bg-green-100 p-3 rounded-lg mr-4">
@@ -307,7 +355,7 @@ function App() {
                 <li><a href="#home" className="text-blue-200 hover:text-white">Home</a></li>
                 <li><a href="#about" className="text-blue-200 hover:text-white">About Us</a></li>
                 <li><a href="#services" className="text-blue-200 hover:text-white">Services</a></li>
-                <li><a href="#contact" className="text-blue-200 hover:text-white">Contact</a></li>
+                <li><a href="#it" className="text-blue-200 hover:text-white">IT Solutions</a></li>
               </ul>
             </div>
 
@@ -317,7 +365,7 @@ function App() {
                 <li><a href="#services" className="text-blue-200 hover:text-white">Ethics Consultation</a></li>
                 <li><a href="#services" className="text-blue-200 hover:text-white">Research Training</a></li>
                 <li><a href="#services" className="text-blue-200 hover:text-white">Study Design</a></li>
-                <li><a href="#services" className="text-blue-200 hover:text-white">Regulatory Support</a></li>
+                <li><a href="#it" className="text-blue-200 hover:text-white">IT Solutions</a></li>
               </ul>
             </div>
 
