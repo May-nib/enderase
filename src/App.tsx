@@ -110,19 +110,19 @@ function App() {
               <div className="bg-sky-50 rounded-2xl p-6 md:p-8">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div className="text-3xl font-bold text-sky-800 mb-2">100+</div>
+                    <div className="text-3xl font-bold text-sky-800 mb-2">12+</div>
                     <div className="text-gray-600">Projects Completed</div>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div className="text-3xl font-bold text-sky-800 mb-2">15+</div>
+                    <div className="text-3xl font-bold text-sky-800 mb-2">5+</div>
                     <div className="text-gray-600">Years Experience</div>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div className="text-3xl font-bold text-sky-800 mb-2">50+</div>
+                    <div className="text-3xl font-bold text-sky-800 mb-2">10+</div>
                     <div className="text-gray-600">Clients</div>
                   </div>
                   <div className="bg-white p-6 rounded-lg shadow-sm text-center">
-                    <div className="text-3xl font-bold text-sky-800 mb-2">12</div>
+                    <div className="text-3xl font-bold text-sky-800 mb-2">7</div>
                     <div className="text-gray-600">African Countries</div>
                   </div>
                 </div>
