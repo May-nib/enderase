@@ -289,23 +289,6 @@ function App() {
                     <div>
                       <h4 className="font-semibold text-gray-800">Email</h4>
                       <p className="text-gray-600">enderasers@outlook.com</p>
-
-                      {/* Embedded Google Map placed directly under the email */}
-                      <div className="mt-4">
-                        <div className="w-full h-84 rounded-lg overflow-hidden border border-gray-200">
-                          <iframe
-                            title="Enderase Research location"
-                            src="https://maps.google.com/maps?q=9.009161,38.775230&z=16&output=embed"
-                            className="w-full h-full"
-                            allowFullScreen
-                            loading="lazy"
-                            referrerPolicy="no-referrer-when-downgrade"
-                          />
-                        </div>
-                        <div className="mt-2 text-sm text-gray-500">
-                          <a href="https://maps.google.com/maps?q=9.009161,38.775230&ll=9.009161,38.775230&z=16" target="_blank" rel="noreferrer" className="underline">Open in Google Maps</a>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -329,6 +312,23 @@ function App() {
                 </form>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Full Width Map Section */}
+        <section className="w-full h-80 bg-gray-100">
+          <div className="w-full h-full">
+            <iframe
+              title="Enderase Research location"
+              src="https://maps.google.com/maps?q=9.009161,38.775230&z=16&output=embed"
+              className="w-full h-full border-0"
+              allowFullScreen
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
+          </div>
+          <div className="text-center mt-2">
+            <a href="https://maps.google.com/maps?q=9.009161,38.775230&ll=9.009161,38.775230&z=16" target="_blank" rel="noreferrer" className="text-sm text-gray-500 underline">Open in Google Maps</a>
           </div>
         </section>
       </main>
